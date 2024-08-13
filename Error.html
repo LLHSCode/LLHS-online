@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>  
+	<title>Error</title>
+	<style>
+		body {
+			font-family: Arial, sans-serif;
+			background-color: #f4f4f4;
+			margin: 0;
+			padding: 0;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			height: 100vh;
+		}
+		.error-container {
+			background: #fff;
+			padding: 20px;
+			border-radius: 5px;
+			box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+			text-align: center;
+			animation: fadeIn 1s ease-in-out;
+		}
+		@keyframes fadeIn {
+			from { opacity: 0; transform: translateY(-20px); }
+			to { opacity: 1; transform: translateY(0); }
+		}
+		h1 {
+			color: #d9534f;
+			font-size: 2.5em;
+		}
+		p {
+			color: #333;
+			margin: 10px 0;
+		}
+		.redirect-button {
+			background-color: #007bff;
+			color: #fff;
+			border: none;
+			padding: 10px 20px;
+			border-radius: 5px;
+			cursor: pointer;
+			margin-top: 20px;
+			transition: background-color 0.3s ease;
+		}
+		.redirect-button:hover {
+			background-color: #0056b3;
+		}
+	</style>
+</head>
+<body>
+	<div class="error-container">
+		<h1>Error 错误！</h1>
+		<p>Sorry, unable to connect to the address. Please try again and ensure your network connection is stable and the address is correct.</p>
+		<p>抱歉，不能连接到该地址。请重试并确保网络连接正常和地址正确。</p>
+		<button class="redirect-button" onclick="window.location.href='https://llhscode.github.io/LLHS-online/Support.html'">跳转</button>
+	</div>
+</body>
+</html>
